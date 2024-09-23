@@ -7,7 +7,6 @@ namespace String_Sorting.Filters
     public static class ExceptionHandler
     {
         public static void HandleException(Exception ex) =>
-            // Log the exception or show a message box
             MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
 }

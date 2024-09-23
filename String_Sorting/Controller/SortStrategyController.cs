@@ -1,12 +1,11 @@
-﻿using String_Sorting.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// <copyright file="SortStrategyController.cs" company="Yousource">
+// Copyright (c) Yousource. All rights reserved.
+// </copyright>
 
 namespace String_Sorting.Controller
 {
+    using String_Sorting.Model;
+
     public class SortStrategyController
     {
         private readonly ISortStrategyRepository _sortStrategyRepository;
@@ -15,7 +14,5 @@ namespace String_Sorting.Controller
         {
             this._sortStrategyRepository = sortStrategyRepository;
         }
-
-        //public string Sort
     }
 }

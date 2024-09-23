@@ -1,18 +1,16 @@
+// <copyright file="MainFormView.cs" company="Yousource">
+// Copyright (c) Yousource. All rights reserved.
+// </copyright>
+
 namespace String_Sorting
 {
-    using System.DirectoryServices;
-    using System.Linq.Expressions;
     using String_Sorting.Model;
     using static String_Sorting.Model.SortingModel;
 
     public partial class MainFormView : Form
     {
-        private readonly ISortStrategyRepository _sortStrategyRepository;
         private readonly DictionaryEnumsMapper _dictionaryEnumsMapper;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MainFormView"/> class.
-        /// </summary>
         public MainFormView(DictionaryEnumsMapper dictionaryEnumsMapper)
         {
             this.InitializeComponent();
@@ -23,10 +21,6 @@ namespace String_Sorting
         {
             this.Txt_Input.Focus();
             this.Cmb_SortList.DataSource = Enum.GetValues(typeof(SortingStrategy));
-        }
-
-        private void Cmb_SortList_SelectedIndexChanged(object sender, EventArgs e)
-        {
         }
 
         private void Btn_ExecuteSort_Click(object sender, EventArgs e)
@@ -44,13 +38,12 @@ namespace String_Sorting
             }
         }
 
-        private void Lbl_SortedString_Click(object sender, EventArgs e)
+        private void Cmb_SortList_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Lbl_SortedString_Click(object sender, EventArgs e)
         {
-           
         }
     }
 }

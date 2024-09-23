@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// <copyright file="SortTestModel.cs" company="Yousource">
+// Copyright (c) Yousource. All rights reserved.
+// </copyright>
 
 namespace String_Sorting_Test
 {
     public class SortTestModel
     {
-        private string _expectedOutput;
-        public string? exepectedInput
+        private string? _expectedOutput = string.Empty;
+
+        public string? ExepectedInput
         {
             get => this._expectedOutput;
-            set
-            {
-                _expectedOutput = value.ToLower();
-            }
+            set => this._expectedOutput = value?.ToLower();
         }
-        public string? expectedOutput { get; set; }
+
+        public string? ExpectedOutput { get; set; }
     }
 }

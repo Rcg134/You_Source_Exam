@@ -2,15 +2,11 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using static String_Sorting.Model.SortingModel;
 
     public class DictionaryEnumsMapper
     {
         private readonly ISortStrategyRepository _sortStrategyRepository;
-        private readonly Dictionary<SortingStrategy, Func<string>> actions;
 
         public DictionaryEnumsMapper(ISortStrategyRepository sortStrategyRepository)
         {
