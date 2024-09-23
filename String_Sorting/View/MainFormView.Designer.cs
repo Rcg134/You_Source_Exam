@@ -39,7 +39,7 @@
             // Btn_ExecuteSort
             // 
             Btn_ExecuteSort.Anchor = AnchorStyles.None;
-            Btn_ExecuteSort.Location = new Point(90, 175);
+            Btn_ExecuteSort.Location = new Point(104, 175);
             Btn_ExecuteSort.Name = "Btn_ExecuteSort";
             Btn_ExecuteSort.Size = new Size(96, 38);
             Btn_ExecuteSort.TabIndex = 0;
@@ -50,6 +50,7 @@
             // Cmb_SortList
             // 
             Cmb_SortList.Anchor = AnchorStyles.None;
+            Cmb_SortList.DropDownStyle = ComboBoxStyle.DropDownList;
             Cmb_SortList.FormattingEnabled = true;
             Cmb_SortList.Location = new Point(30, 133);
             Cmb_SortList.Name = "Cmb_SortList";
