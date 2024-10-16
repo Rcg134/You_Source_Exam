@@ -11,7 +11,7 @@ jobs:
 
     runs-on: windows-latest
     env:
-      PROJECT: String_Sorting.sln 
+      PROJECT: String_Sorting/String_Sorting.sln 
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET
