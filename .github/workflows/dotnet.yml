@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore String_Sorting/String_Sorting.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore String_Sorting/String_Sorting.csproj
     - name: Test
       run: dotnet test --no-build --verbosity normal String_Sorting_Test/String_Sorting_Test.csproj
