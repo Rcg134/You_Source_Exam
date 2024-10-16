@@ -86,7 +86,7 @@ namespace String_Sorting_Test
             // Arrange
             var model = new SortingModel();
             var input = "Invalid@String";
-            var expectedOutput = "Input string contains invalid characters.s";
+            var expectedOutput = "Input string contains invalid characters.";
 
             // Act & Assert
             var exception = Assert.Throws<ArgumentException>(() =>
