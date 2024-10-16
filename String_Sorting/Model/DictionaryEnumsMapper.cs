@@ -24,7 +24,7 @@
 
             if (results.TryGetValue(strategy, out var action))
             {
-                return action.Invoke();
+                return action();
             }
 
             throw new InvalidOperationException("Sorting strategy not found.");
