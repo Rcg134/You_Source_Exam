@@ -10,7 +10,8 @@ jobs:
   build:
 
     runs-on: windows-latest
-
+    env:
+      PROJECT: String_Sorting.sln 
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET
@@ -18,8 +19,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore String_Sorting/String_Sorting.csproj
+      run: dotnet restore  ${{ env.PROJECT }}
     - name: Build
-      run: dotnet build --no-restore String_Sorting/String_Sorting.csproj
+      run: dotnet build --no-restore  ${{ env.PROJECT }}
     - name: Test
-      run: dotnet test --no-build --verbosity normal String_Sorting_Test/String_Sorting_Test.csproj
+      run: dotnet test --no-build --verbosity normal  ${{ env.PROJECT }}
